@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useInputContext } from '../../context'
 import styles from './DetailsInput.module.css'
+import { useNavigate } from 'react-router-dom'
 
 const DetailsInput = () => {
   const {
@@ -18,6 +19,8 @@ const DetailsInput = () => {
     setLtp,
     setGrandTotal,
   } = useInputContext()
+
+  const navigate = useNavigate()
 
   const [inputFields, setInputFields] = useState({
     holdingNumber: '',
@@ -56,7 +59,9 @@ const DetailsInput = () => {
     setItemNameTotal(inputFields.itemNameTotal)
     setDivision(inputFields.division)
     setLtp(inputFields.ltp)
-    setGrandTotal(inputFields.grandTotal)
+    setGrandTotal( inputFields.grandTotal )
+    
+    navigate('/screen')
   }
 
   return (
