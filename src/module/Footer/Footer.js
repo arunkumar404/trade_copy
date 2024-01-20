@@ -5,13 +5,17 @@ import footerIcon2 from '../../asset/images/footerIcon2.png'
 import footerIcon3 from '../../asset/images/footerIcon3.png'
 import footerIcon4 from '../../asset/images/footerIcon4.png'
 import footerIcon5 from '../../asset/images/footerIcon5.png'
+import { useInputContext } from '../../context'
 
 const Footer = () => {
+
+    const { grandTotal } = useInputContext()
+
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerTop}>
         <p className={styles.textLeft}>MTM</p>
-        <p className={styles.textRightBottom}>7,375.00</p>
+        <p className={styles.textRightBottom}>{grandTotal}</p>
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.iconNtextContainer}>

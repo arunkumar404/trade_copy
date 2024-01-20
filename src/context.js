@@ -3,19 +3,19 @@ import { createContext, useContext, useState } from 'react'
 const InputContext = createContext(null)
 
 export const ContextProvider = ({ children }) => {
-  const [holdingNumber, setHoldingNumber] = useState('')
-  const [positionsNumber, setPositionsNumber] = useState('')
-  const [totalPLNumber, setTotalPLNumber] = useState('')
-  const [realisedPLNumber, setRealised] = useState('')
-  const [unrealisedPLNumber, setUnrealised] = useState('')
-  const [quantity, setQuantity] = useState('')
-  const [sellAvg, setSellAvg] = useState('')
-  const [buyAvg, setBuyAvg] = useState('')
-  const [itemName, setItemName] = useState('')
-  const [itemNameTotal, setItemNameTotal] = useState('')
-  const [division, setDivision] = useState('')
-  const [ltp, setLtp] = useState('')
-  const [grandTotal, setGrandTotal] = useState('')
+  const [holdingNumber, setHoldingNumber] = useState('0')
+  const [positionsNumber, setPositionsNumber] = useState('0')
+  const [totalPLNumber, setTotalPLNumber] = useState('7,375.00')
+  const [realisedPLNumber, setRealised] = useState('7,375.00')
+  const [unrealisedPLNumber, setUnrealised] = useState('0.00')
+  const [quantity, setQuantity] = useState('0')
+  const [sellAvg, setSellAvg] = useState('97.30')
+  const [buyAvg, setBuyAvg] = useState('82.55')
+  const [itemName, setItemName] = useState('NIFTY 14TH DEC 20900 PE')
+  const [itemNameTotal, setItemNameTotal] = useState('7,375.00')
+  const [division, setDivision] = useState('NFO')
+  const [ltp, setLtp] = useState('95.90')
+  const [grandTotal, setGrandTotal] = useState('7,375.00')
 
   return (
     <InputContext.Provider

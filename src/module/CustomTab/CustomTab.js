@@ -1,8 +1,10 @@
 import { Tab, Tabs } from '@mui/material'
-import React, { useState } from 'react'
+import React from 'react'
+import { useInputContext } from '../../context'
 
 const CustomTab = () => {
-  const [tabData, setTabData] = useState([6,1])
+  const { holdingNumber, positionsNumber } = useInputContext()
+
   return (
     <Tabs
       value={1}
@@ -15,15 +17,15 @@ const CustomTab = () => {
         '& .MuiTabs-flexContainer': {
           justifyContent: 'center',
           gap: '2rem',
-          marginTop:'1rem'
+          marginTop: '1rem',
         },
         '& .Mui-selected': {
           color: '#28609b !important',
         },
       }}
     >
-      <Tab label={`Holdings (${tabData[0]})`} />
-      <Tab label={`Positions (${tabData[1]})`} />
+      <Tab label={`Holdings (${holdingNumber})`} />
+      <Tab label={`Positions (${positionsNumber})`} />
     </Tabs>
   )
 }
