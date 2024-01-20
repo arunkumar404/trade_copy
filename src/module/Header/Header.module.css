@@ -1,0 +1,20 @@
+.brief {
+  width: 27px;
+  height: 27px;
+}
+.head {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.headerItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.3rem;
+}

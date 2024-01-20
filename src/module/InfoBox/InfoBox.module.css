@@ -1,0 +1,34 @@
+.infoBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161616;
+  padding-bottom: 1rem;
+  margin-inline: 1.5rem;
+  border-radius: 15px;
+  margin-top: 0.7rem;
+  border: 1px solid #363535;
+}
+.detailItemContainer {
+  text-align: center;
+}
+.textTop {
+  color: #a0a0a0;
+}
+.textBottom {
+  color: #3a9979;
+  font-weight: 500;
+  margin-top: -0.6rem;
+  padding-bottom: 0.2rem;
+}
+.minorDetails {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+}
+.dividerVertical {
+  width: 1px;
+  background-color: #363535;
+  height: 40px;
+}

@@ -1,0 +1,85 @@
+.totalIconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 1.5rem;
+  margin-block: 1rem;
+  height: 1.4rem;
+}
+.leftPart {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.icon {
+  width: 18px;
+}
+.iconAnalytics {
+  width: 20px;
+}
+.rightPart {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.textRight {
+  color: #28609b;
+  font-size: 0.9rem;
+}
+.longPress {
+  color: #747272;
+  font-size: 0.85rem;
+  text-align: center;
+  border-block: 1px solid #202020;
+  padding-block: 0.7rem;
+}
+.firstLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+}
+.detailShorts {
+  color: #747272;
+  font-size: 0.75rem;
+}
+.detailMedium {
+  color: #747272;
+  font-size: 0.85rem;
+}
+.buttonMis {
+  background-color: #161618;
+  border: none;
+  color: #b3b2b2;
+  font-size: 0.7rem;
+  padding: 0.4rem 1.9rem;
+  border-radius: 5px;
+}
+.secondLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  margin-top: -0.5rem;
+}
+.textLeft {
+  color: #747272;
+  font-size: 1.1rem;
+}
+.textRightBottom {
+  color: #3a9979;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.moveleft {
+  transform: translateX(-10%);
+}
+.thirdLine {
+  margin-top: -0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid #202020;
+}
