@@ -1,20 +1,17 @@
-import styles from './App.module.css'
-import BottomContainer from './module/BottomContainer/BottomContainer';
-import CustomTab from './module/CustomTab/CustomTab'
-import Footer from './module/Footer/Footer';
-import Header from './module/Header/Header';
-import InfoBox from './module/InfoBox/InfoBox';
+import { Route, Routes } from 'react-router-dom'
+import { ContextProvider } from './context'
+import MainScreen from './module/MainScreen/MainScreen'
+import DetailsInput from './module/DetailsInput/DetailsInput'
 
 function App() {
   return (
-    <div className={styles.app}>
-      <Header />
-      <CustomTab />
-      <InfoBox />
-      <BottomContainer />
-      <Footer />
-    </div>
+    <ContextProvider>
+      <Routes>
+        <Route path='/screen' element={<MainScreen />} />
+        <Route path='/' element={<DetailsInput />} />
+      </Routes>
+    </ContextProvider>
   )
 }
 
-export default App;
+export default App
