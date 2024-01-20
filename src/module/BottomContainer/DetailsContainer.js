@@ -3,15 +3,8 @@ import styles from './BottomContainer.module.css'
 import { useInputContext } from '../../context'
 
 const DetailsContainer = () => {
-    const {
-      quantity,
-      sellAvg,
-      buyAvg,
-      itemName,
-      itemNameTotal,
-      division,
-      ltp,
-    } = useInputContext()
+  const { quantity, sellAvg, buyAvg, itemName, itemNameTotal, division, ltp } =
+    useInputContext()
 
   return (
     <div>
@@ -24,11 +17,13 @@ const DetailsContainer = () => {
         <button className={styles.buttonMis}>MIS</button>
       </div>
       <div className={styles.secondLine}>
-        <p className={styles.textLeft}>{itemName}</p>
+        <p className={`${styles.textLeft} ${styles.toUpperCase}`}>{itemName}</p>
         <p className={styles.textRightBottom}>{itemNameTotal}</p>
       </div>
       <div className={styles.thirdLine}>
-        <p className={styles.detailShorts}>{division}</p>
+        <p className={`${styles.detailShorts} ${styles.toUpperCase}`}>
+          {division}
+        </p>
         <p className={`${styles.detailMedium} ${styles.moveleft}`}>
           Buy Avg. {buyAvg}{' '}
         </p>
