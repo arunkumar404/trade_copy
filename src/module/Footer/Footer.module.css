@@ -60,3 +60,6 @@
   align-items: center;
   justify-content: center;
 }
+.negative {
+  color: #c6626c;
+}

@@ -18,6 +18,7 @@ const DetailsInput = () => {
     setDivision,
     setLtp,
     setGrandTotal,
+    setChangeButton,
   } = useInputContext()
 
   const navigate = useNavigate()
@@ -36,6 +37,7 @@ const DetailsInput = () => {
     division: '',
     ltp: '',
     grandTotal: '',
+    changeButton: '',
   })
 
   const handleInputChange = (event) => {
@@ -60,6 +62,7 @@ const DetailsInput = () => {
     setDivision(inputFields.division)
     setLtp(inputFields.ltp)
     setGrandTotal( inputFields.grandTotal )
+    setChangeButton(inputFields.changeButton)
     
     navigate('/screen')
   }

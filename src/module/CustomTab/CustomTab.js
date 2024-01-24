@@ -12,7 +12,7 @@ const CustomTab = () => {
         '& .MuiTab-root': {
           color: '#ffffff',
           textTransform: 'none',
-          minWidth: '9rem',
+          minWidth: '8.5rem',
         },
         '& .MuiTabs-flexContainer': {
           justifyContent: 'center',
@@ -21,6 +21,10 @@ const CustomTab = () => {
         },
         '& .Mui-selected': {
           color: '#28609b !important',
+        },
+        '& .MuiTabs-indicator': {
+          top: '90%',
+          
         },
       }}
     >

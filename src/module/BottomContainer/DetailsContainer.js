@@ -3,8 +3,18 @@ import styles from './BottomContainer.module.css'
 import { useInputContext } from '../../context'
 
 const DetailsContainer = () => {
-  const { quantity, sellAvg, buyAvg, itemName, itemNameTotal, division, ltp } =
-    useInputContext()
+  const {
+    quantity,
+    sellAvg,
+    buyAvg,
+    itemName,
+    itemNameTotal,
+    division,
+    ltp,
+    changeButton,
+  } = useInputContext()
+
+  const isNegative = itemNameTotal < 0
 
   return (
     <div>
@@ -14,11 +24,19 @@ const DetailsContainer = () => {
       <div className={styles.firstLine}>
         <p className={styles.detailShorts}>Qty. {quantity} </p>
         <p className={styles.detailMedium}>Sell Avg. {sellAvg} </p>
-        <button className={styles.buttonMis}>MIS</button>
+        <button className={`${styles.buttonMis} ${styles.toUpperCase}`}>
+          {changeButton}
+        </button>
       </div>
       <div className={styles.secondLine}>
         <p className={`${styles.textLeft} ${styles.toUpperCase}`}>{itemName}</p>
-        <p className={styles.textRightBottom}>{itemNameTotal}</p>
+        <p
+          className={`${styles.textRightBottom} ${
+            isNegative && styles.negative
+          }`}
+        >
+          {itemNameTotal}
+        </p>
       </div>
       <div className={styles.thirdLine}>
         <p className={`${styles.detailShorts} ${styles.toUpperCase}`}>

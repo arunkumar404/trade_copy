@@ -16,6 +16,7 @@ export const ContextProvider = ({ children }) => {
   const [division, setDivision] = useState('NFO')
   const [ltp, setLtp] = useState('95.90')
   const [grandTotal, setGrandTotal] = useState('7,375.00')
+  const [changeButton, setChangeButton] = useState('MIS')
 
   return (
     <InputContext.Provider
@@ -46,6 +47,8 @@ export const ContextProvider = ({ children }) => {
         setLtp,
         grandTotal,
         setGrandTotal,
+        changeButton,
+        setChangeButton,
       }}
     >
       {children}

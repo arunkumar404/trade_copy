@@ -8,14 +8,20 @@ import footerIcon5 from '../../asset/images/footerIcon5.png'
 import { useInputContext } from '../../context'
 
 const Footer = () => {
-
-    const { grandTotal } = useInputContext()
+  const { grandTotal } = useInputContext()
+  const isNegative = grandTotal < 0
 
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerTop}>
         <p className={styles.textLeft}>MTM</p>
-        <p className={styles.textRightBottom}>{grandTotal}</p>
+        <p
+          className={`${styles.textRightBottom} ${
+            isNegative && styles.negative
+          }`}
+        >
+          {isNegative ? `- ₹ ${grandTotal * -1}` : `₹ ${grandTotal}`}
+        </p>
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.iconNtextContainer}>
