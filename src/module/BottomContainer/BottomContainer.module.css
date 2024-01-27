@@ -39,6 +39,7 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: 1.5rem;
+  margin-top: -.3rem;
 }
 
 .detailShorts {
@@ -62,16 +63,16 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: 1.5rem;
-  margin-top: -0.9rem;
+  margin-top: -1rem;
 }
 .textLeft {
   color: #747272;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .textRightBottom {
   color: #3a9979;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .negative {
   color: #c6626c;
@@ -80,12 +81,12 @@
   transform: translateX(-10%);
 }
 .thirdLine {
-  margin-top: -1rem;
+  margin-top: -1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-inline: 1.5rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid #363636;
 }
 .toUpperCase {

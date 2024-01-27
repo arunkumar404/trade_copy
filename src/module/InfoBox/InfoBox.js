@@ -21,14 +21,14 @@ const InfoBox = () => {
           textTop='Realised P&L'
           textBottom={realisedPLNumber}
           topsize='.7rem'
-          bottomSize='1.1rem'
+          bottomSize='1.05rem'
         />
         <div className={styles.dividerVertical} />
         <DetailItem
           textTop='Unrealised P&L'
           textBottom={unrealisedPLNumber}
           topsize='.7rem'
-          bottomSize='1.1rem'
+          bottomSize='1.05rem'
         />
       </div>
     </div>
